@@ -202,3 +202,13 @@ while True :
             elif option == "Jebres":
                 system('cls')
                 ongkir =  3000
+                totalpembayaran = ongkir + totalharga
+                print("Nama \t\t: ", nama)
+                print("No Handphone \t: ", No_handphone)
+                print("Alamat Lengkap \t: ", Alamat_lengkap)
+                print("Total belanjaan Anda :", totalharga)
+                print("Ongkir               :", ongkir )
+                print("                      -------------+")
+                print("Total Pembayaran     :", totalpembayaran)
+                break
+            else :
