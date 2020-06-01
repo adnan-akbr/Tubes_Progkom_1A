@@ -60,7 +60,7 @@ while True :
                 print("Harga:Rp " + str(total))
             else:
                 print("Opsi tidak ditemukan")
-elif jp == "2" :
+        elif jp == "2" :
             listBuah =[]
 
             listBuah.append("1. Mangga = 30000") 
@@ -105,3 +105,47 @@ elif jp == "2" :
             listSayur.extend(["5. Kembang kol = 35000"]) # Menambahkan beberapa data ke bagian akhir
             for isi in listSayur:
                 print(isi)
+                option = int(input("Jenis sayur apa yang ingin Anda beli?: "))
+
+            if option == 1:
+                qnty = int(input("Masukkan jumlah sayur (dalam kg)\t: "))
+                total = qnty * 40000
+                print("Harga:Rp " + str(total))
+            elif option == 2:
+                qnty = int(input("Masukkan jumlah sayur (dalam kg)\t: "))
+                total = qnty * 20000
+                print("Harga:Rp " + str(total))
+            elif option == 3:
+                qnty = int(input("Masukkan jumlah sayur (dalam kg)\t: "))
+                total = qnty * 25000
+                print("Harga:Rp " + str(total))
+            elif option == 4:
+                qnty = int(input("Masukkan jumlah sayur (dalam kg)\t: "))
+                total = qnty * 25000
+                print("Harga:Rp " + str(total))
+            elif option == 5:
+                qnty = int(input("Masukkan jumlah sayur (dalam kg)\t: "))
+                total = qnty * 35000
+                print("Harga \t:Rp " + str(total))
+            else:
+                print("Opsi tidak ditemukan")
+                break
+        else :
+           system('cls')
+           print("-Tidak terdeteksi-")
+        totalharga += total
+        print("Total belanjaan Anda :", totalharga)
+        ulang = input("Apakah Anda ingin menambah keranjang belanjaan? (pilih y/t): ")
+
+        if ulang == "y":
+            system('cls')
+            True
+        elif ulang == "t" :
+            print("Total belanjaan Anda :", totalharga)
+
+            nama = input ("Nama: ")
+            No_handphone = input ("No Handphone: ")
+            Alamat_lengkap = input ("Alamat Lengkap: ")
+            alamat = ['Banjarsari', 'Serengan', 'Laweyan', 'Pasar Kliwon', 'Jebres'] 
+            print("Daftar Kecamatan: ")
+            for i in range (5):
