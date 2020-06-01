@@ -37,3 +37,26 @@ while True :
             listDaging.extend(["5. Oxtail = 130000"])  # Menambahkan beberapa data ke bagian akhir
             for isi in listDaging:
                 print(isi)
+            option = int(input("Jenis daging apa yang ingin Anda beli?: "))
+            if option == 1:
+                qnty = int(input("Masukkan jumlah daging: "))
+                total = qnty * 170000
+                print("Harga:Rp " + str(total))
+            elif option == 2:
+                qnty = int(input("Masukkan jumlah daging: "))
+                total = qnty * 150000
+                print("Harga:Rp " + str(total))
+            elif option == 3:
+                qnty = int(input("Masukkan jumlah daging: "))
+                total = qnty * 140000
+                print("Harga:Rp " + str(total))
+            elif option == 4:
+                qnty = int(input("Masukkan jumlah daging: "))
+                total = qnty * 120000
+                print("Harga:Rp " + str(total))
+            elif option == 5:
+                qnty = int(input("Masukkan jumlah daging: "))
+                total = qnty * 130000
+                print("Harga:Rp " + str(total))
+            else:
+                print("Opsi tidak ditemukan")
