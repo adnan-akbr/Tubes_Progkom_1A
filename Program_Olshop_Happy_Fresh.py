@@ -149,3 +149,45 @@ while True :
             alamat = ['Banjarsari', 'Serengan', 'Laweyan', 'Pasar Kliwon', 'Jebres'] 
             print("Daftar Kecamatan: ")
             for i in range (5):
+                print(i+1, alamat[i])
+            option = str(input("Nama kecamatan : "))
+            if option == "Banjarsari":
+                system('cls')
+                ongkir = 4000
+                totalpembayaran = ongkir + totalharga
+                print("Nama \t\t: ", nama)
+                print("No Handphone \t: ", No_handphone)
+                print("Alamat Lengkap \t: ", Alamat_lengkap)
+                print("Total belanjaan Anda :", totalharga)
+                print("Ongkir               :", ongkir )
+                print("                      -------------+")
+                print("Total Pembayaran     :", totalpembayaran)
+                break
+            elif option == "Serengan":
+                system('cls')
+                ongkir =  3000
+                totalpembayaran = ongkir + totalharga
+                print("Nama \t\t: ", nama)
+                print("No Handphone \t: ", No_handphone)
+                print("Alamat Lengkap \t: ", Alamat_lengkap)
+                print("Total belanjaan Anda :", totalharga)
+                print("Ongkir               :", ongkir )
+                print("                      -------------+")
+                print("Total Pembayaran     :", totalpembayaran)
+                break
+            elif option == "Laweyan":
+                system('cls')
+                ongkir =  5000
+                totalpembayaran = ongkir + totalharga
+                print("Nama \t\t: ", nama)
+                print("No Handphone \t: ", No_handphone)
+                print("Alamat Lengkap \t: ", Alamat_lengkap)
+                print("Total belanjaan Anda :", totalharga)
+                print("Ongkir               :", ongkir )
+                print("                      -------------+")
+                print("Total Pembayaran     :", totalpembayaran)
+                break
+            elif option == "Pasar Kliwon":
+                system('cls')
+                ongkir =  3000
+                totalpembayaran = ongkir + totalharga
