@@ -212,3 +212,14 @@ while True :
                 print("Total Pembayaran     :", totalpembayaran)
                 break
             else :
+                system('cls')
+                ongkir = 10000
+                totalpembayaran = ongkir + totalharga
+                print(nama)
+                print(No_handphone)
+                print(Alamat_lengkap)
+                print("Total belanjaan Anda :", totalharga)
+                print("Ongkir               :", ongkir )
+                print("                      -------------+")
+                print("Total Pembayaran     :", totalpembayaran)
+                break
