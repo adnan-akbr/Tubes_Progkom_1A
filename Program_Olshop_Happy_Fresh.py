@@ -192,9 +192,9 @@ while True :
                 system('cls')
                 ongkir =  3000
                 totalpembayaran = ongkir + totalharga
-                print(nama)
-                print(No_handphone)
-                print(Alamat_lengkap)
+                print("Nama \t\t: ", nama)
+                print("No Handphone \t: ", No_handphone)
+                print("Alamat Lengkap \t: ", Alamat_lengkap)
                 print("Total belanjaan Anda :", totalharga)
                 print("Ongkir               :", ongkir )
                 print("                      -------------+")
@@ -216,9 +216,9 @@ while True :
                 system('cls')
                 ongkir = 10000
                 totalpembayaran = ongkir + totalharga
-                print(nama)
-                print(No_handphone)
-                print(Alamat_lengkap)
+                print("Nama \t\t: ", nama)
+                print("No Handphone \t: ", No_handphone)
+                print("Alamat Lengkap \t: ", Alamat_lengkap)
                 print("Total belanjaan Anda :", totalharga)
                 print("Ongkir               :", ongkir )
                 print("                      -------------+")
