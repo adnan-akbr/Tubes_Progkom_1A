@@ -18,7 +18,7 @@ while True :
     print(">      ❗Pengirimiman Khusus Area Solo❗     <")
     print(">         MENERIMA COD DAN TRANSFER        <")
     print(">                                          <")
-    print(">          ❗❗❗ HAPPY SHOPPING ❗❗❗          <")
+    print(">          ❗❗❗ HAPPY SHOPPING ❗❗❗           <")
     print(">             GRAB YOURS FAST              <")
     print(">                                          <")
     print("> ======================================== <")
@@ -64,33 +64,33 @@ while True :
         elif jp == "2" :
             listBuah =[]
 
-            listBuah.append("1. Mangga = 30000") 
-            listBuah.append("2. Jeruk = 20000")
-            listBuah.append("3. Apel = 50000")
-            listBuah.append("4. Pir = 25000")
-            listBuah.extend(["5. Buah naga = 30000"]) # Menambahkan beberapa data ke bagian akhir
+            listBuah.append("1. Mangga (1kg) \t = 30000") 
+            listBuah.append("2. Jeruk (1kg) \t\t = 20000")
+            listBuah.append("3. Apel (1kg) \t\t = 50000")
+            listBuah.append("4. Pir (1kg) \t\t = 25000")
+            listBuah.extend(["5. Buah naga (1kg) \t = 30000"]) # Menambahkan beberapa data ke bagian akhir
             for isi in listBuah:
                 print(isi)
             option = int(input("Jenis buah apa yang ingin Anda beli?: "))
 
             if option == 1:
-                qnty = int(input("Masukkan jumlah buah: "))
+                qnty = int(input("Masukkan jumlah buah (per kg): "))
                 total = qnty * 30000
                 print("Harga:Rp " + str(total))
             elif option == 2:
-                qnty = int(input("Masukkan jumlah buah: "))
+                qnty = int(input("Masukkan jumlah buah (per kg): "))
                 total = qnty * 20000
                 print("Harga:Rp " + str(total))
             elif option == 3:
-                qnty = int(input("Masukkan jumlah buah: "))
+                qnty = int(input("Masukkan jumlah buah (per kg): "))
                 total = qnty * 50000
                 print("Harga:Rp " + str(total))
             elif option == 4:
-                qnty = int(input("Masukkan jumlah buah: "))
+                qnty = int(input("Masukkan jumlah buah (per kg): "))
                 total = qnty * 25000
                 print("Harga:Rp " + str(total))
             elif option == 5:
-                qnty = int(input("Masukkan jumlah buah: "))
+                qnty = int(input("Masukkan jumlah buah (per kg): "))
                 total = qnty * 30000
                 print("Harga:Rp " + str(total))
             else:
