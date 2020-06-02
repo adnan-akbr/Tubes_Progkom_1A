@@ -238,3 +238,14 @@ while True :
         print("Mohon transfer ke rek. BRI 3011 0102 5427 532 a.n Fitria Dwi Assifa")
     else:
         print("Admin akan mengirim pesan konfirmasi melalui Whatsapp/SMS ")
+    
+    ulang = input("Apakah Anda ingin menggunakan program ini lagi? (pilih y/t): ")
+
+    if ulang == "y":
+        system('cls')
+        True
+    elif ulang == "t" :
+        system('cls')
+        print("------Terima kasih atas kunjungannya------")
+        break
+        
