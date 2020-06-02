@@ -151,7 +151,7 @@ while True :
             print("Daftar Kecamatan: ")
             for i in range (5):
                 print(i+1, alamat[i])
-            option = str(input("Nama kecamatan : "))
+            option = str(input("Nama kecamatan : ")) #Masukan nama kecamatan menggunakan kaidah KBBI
             if option == "Banjarsari":
                 system('cls')
                 ongkir = 4000
@@ -233,11 +233,13 @@ while True :
     print(">===========================================<")
     
     print("Metode pembayaran \t\t: COD/Transfer")
-    MP = input("Input metode pembayaran \t:")
+    MP = input("Input metode pembayaran \t:") #Masukan metode pembayaran
     if MP == "Transfer":
         print("Mohon transfer ke rek. BRI 3011 0102 5427 532 a.n Fitria Dwi Assifa")
-    else:
+    elif MP == "COD"
         print("Admin akan mengirim pesan konfirmasi melalui Whatsapp/SMS ")
+    else :
+        print("system error")
     
     ulang = input("Apakah Anda ingin menggunakan program ini lagi? (pilih y/t): ")
 
