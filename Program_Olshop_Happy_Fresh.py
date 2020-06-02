@@ -5,7 +5,7 @@ while True :
     totalharga= 0
     print(">==========================================<")
     print(">                                          <")
-    print(">  SELAMAT DATANG DI TOKO HAPPY FRESH!     <")
+    print(">    SELAMAT DATANG DI TOKO HAPPY FRESH!   <")
     print("> 🚩Pucang Sawit, Surakarta, Jawa Tengah🚩 <")
     print(">             +6281230526092               <")
     print(">                                          <")
