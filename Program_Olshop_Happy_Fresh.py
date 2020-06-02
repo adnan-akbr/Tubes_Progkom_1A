@@ -99,10 +99,10 @@ while True :
         elif jp == "3" :
             listSayur =[]
 
-            listSayur.append("1. Brokoli = 40000") 
-            listSayur.append("2. Wortel = 20000")
-            listSayur.append("3. Kentang = 25000")
-            listSayur.append("4. Cabai = 25000")
+            listSayur.append("1. Brokoli (1kg) \t\t = 40000") 
+            listSayur.append("2. Wortel (1kg) \t\t = 20000")
+            listSayur.append("3. Kentang (1kg) \t\t = 25000")
+            listSayur.append("4. Cabai (1kg) \t\t = 25000")
             listSayur.extend(["5. Kembang kol = 35000"]) # Menambahkan beberapa data ke bagian akhir
             for isi in listSayur:
                 print(isi)
@@ -224,6 +224,17 @@ while True :
                 print("                      -------------+")
                 print("Total Pembayaran     :", totalpembayaran)
                 break
-               
-
-            
+                
+                
+    print(">===========================================<")
+    print(">                                           <")
+    print(">          PILIH METODE PEMBAYARAN          <")
+    print(">                                           <")
+    print(">===========================================<")
+    
+    print("Metode pembayaran \t\t: COD/Transfer")
+    MP = input("Input metode pembayaran \t:")
+    if MP == "Transfer":
+        print("Mohon transfer ke rek. BRI 3011 0102 5427 532 a.n Fitria Dwi Assifa")
+    else:
+        print("Admin akan mengirim pesan konfirmasi melalui Whatsapp/SMS ")
