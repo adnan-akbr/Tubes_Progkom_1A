@@ -30,36 +30,37 @@ while True :
         if jp == "1" :
             listDaging = []
 
-            listDaging.append("1. Tenderloin = 170000")
-            listDaging.append("2. Sirloin = 150000")
-            listDaging.append("3. Rib eye = 140000")
-            listDaging.append("4. Brisket = 120000")
-            listDaging.extend(["5. Oxtail = 130000"])  # Menambahkan beberapa data ke bagian akhir
+            listDaging.append("1. Tenderloin (1 kg) \t= 170000")
+            listDaging.append("2. Sirloin (1 kg) \t= 150000")
+            listDaging.append("3. Rib eye (1 kg) \t= 140000")
+            listDaging.append("4. Brisket (1 kg) \t= 120000")
+            listDaging.extend(["5. Oxtail (1 kg) \t= 130000"])  # Menambahkan beberapa data ke bagian akhir
             for isi in listDaging:
                 print(isi)
             option = int(input("Jenis daging apa yang ingin Anda beli?: "))
             if option == 1:
-                qnty = int(input("Masukkan jumlah daging: "))
+                qnty = int(input("Masukkan jumlah daging (per kg): "))
                 total = qnty * 170000
                 print("Harga:Rp " + str(total))
             elif option == 2:
-                qnty = int(input("Masukkan jumlah daging: "))
+                qnty = int(input("Masukkan jumlah daging (per kg): "))
                 total = qnty * 150000
                 print("Harga:Rp " + str(total))
             elif option == 3:
-                qnty = int(input("Masukkan jumlah daging: "))
+                qnty = int(input("Masukkan jumlah daging (per kg): "))
                 total = qnty * 140000
                 print("Harga:Rp " + str(total))
             elif option == 4:
-                qnty = int(input("Masukkan jumlah daging: "))
+                qnty = int(input("Masukkan jumlah daging (per kg): "))
                 total = qnty * 120000
                 print("Harga:Rp " + str(total))
             elif option == 5:
-                qnty = int(input("Masukkan jumlah daging: "))
+                qnty = int(input("Masukkan jumlah daging (per kg): "))
                 total = qnty * 130000
                 print("Harga:Rp " + str(total))
             else:
                 print("Opsi tidak ditemukan")
+                break
         elif jp == "2" :
             listBuah =[]
 
