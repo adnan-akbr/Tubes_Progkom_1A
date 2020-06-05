@@ -236,7 +236,7 @@ while True :
     MP = input("Input metode pembayaran \t:") #Masukan metode pembayaran
     if MP == "Transfer":
         print("Mohon transfer ke rek. BRI 3011 0102 5427 532 a.n Fitria Dwi Assifa")
-    elif MP == "COD"
+    elif MP == "COD":
         print("Admin akan mengirim pesan konfirmasi melalui Whatsapp/SMS ")
     else :
         print("system error")
