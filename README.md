@@ -2,11 +2,12 @@
 Program ini dibuat untuk memenuhi tugas besar mata kuliah program komputer 2020 jurusan Teknik Industri Universitas Sebelas Maret. 
 
 Adapun penjelasan singkat mengenai program online shopping adalah sebagai berikut:
+
 - Pemilihan Produk
-  1. Pilih jenis produk yang akan Anda beli, masukkan angka sesuai dengan list berikut:
-      1.Daging
-      2.Buah
-      3.Sayur
+1. Pilih jenis produk yang akan Anda beli, masukkan angka sesuai dengan list berikut:
+       1. Daging
+       2. Buah
+       3. Sayur
 2. Pilihlah produk dengan menginput angka sesuai list, misal Anda memilih daging maka akan muncul:
        1. Tenderlion
        2. Sirloin
