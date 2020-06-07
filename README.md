@@ -15,6 +15,7 @@ Adapun penjelasan singkat mengenai program online shopping adalah sebagai beriku
        4. Brisket
        5. Oxtail
 3. Masukkan jumlah produk yang akan dibeli, maka akan muncul total harga.
+
     Akan muncul pesan "Apakah ingin menambah keranjang belanjaan?" Jika tidak, maka program akan berlanjut ke pengisian data. Jika iya, maka program akan kembali ke halaman list jenis produk.
 
 - Pengisian Identitas
