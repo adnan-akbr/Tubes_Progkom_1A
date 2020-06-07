@@ -1,7 +1,7 @@
 # Tubes_Progkom_1A
 Program ini dibuat untuk memenuhi tugas besar mata kuliah program komputer 2020 jurusan Teknik Industri Universitas Sebelas Maret. 
 
-Adapun penjelasan singkat mengenai program online shopping adalah sebagai berikut:
+Adapun penjelasan singkat mengenai penggunaan program online shopping adalah sebagai berikut:
 
 - Pemilihan Produk
 1. Pilih jenis produk yang akan Anda beli, masukkan angka sesuai dengan list berikut:
