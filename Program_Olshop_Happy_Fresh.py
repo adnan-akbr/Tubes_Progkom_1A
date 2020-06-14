@@ -3,6 +3,8 @@ from os import system
 while True :
     ulang = "y"
     totalharga= 0
+    listnamabelanjaan = []
+    listhargabelanjaan = []
     print(">===========================================<")
     print(">                                           <")
     print(">    SELAMAT DATANG DI TOKO HAPPY FRESH!    <")
@@ -41,23 +43,28 @@ while True :
             if option == 1:
                 qnty = int(input("Masukkan jumlah daging (per kg): "))
                 total = qnty * 170000
-                print("Harga:Rp " + str(total))
+                listnamabelanjaan.append("Tenderloin")
+                listhargabelanjaan.append(qnty)
             elif option == 2:
                 qnty = int(input("Masukkan jumlah daging (per kg): "))
                 total = qnty * 150000
-                print("Harga:Rp " + str(total))
+                listnamabelanjaan.append("Sirloin")
+                listhargabelanjaan.append(qnty)
             elif option == 3:
                 qnty = int(input("Masukkan jumlah daging (per kg): "))
                 total = qnty * 140000
-                print("Harga:Rp " + str(total))
+                listnamabelanjaan.append("Rib eye")
+                listhargabelanjaan.append(qnty)
             elif option == 4:
                 qnty = int(input("Masukkan jumlah daging (per kg): "))
                 total = qnty * 120000
-                print("Harga:Rp " + str(total))
+                listnamabelanjaan.append("Brisket")
+                listhargabelanjaan.append(qnty)
             elif option == 5:
                 qnty = int(input("Masukkan jumlah daging (per kg): "))
                 total = qnty * 130000
-                print("Harga:Rp " + str(total))
+                listnamabelanjaan.append("Oxtail")
+                listhargabelanjaan.append(qnty)
             else:
                 print("Opsi tidak ditemukan")
                 break
@@ -76,23 +83,28 @@ while True :
             if option == 1:
                 qnty = int(input("Masukkan jumlah buah (per kg): "))
                 total = qnty * 30000
-                print("Harga:Rp " + str(total))
+                listnamabelanjaan.append("Mangga")
+                listhargabelanjaan.append(qnty)
             elif option == 2:
                 qnty = int(input("Masukkan jumlah buah (per kg): "))
                 total = qnty * 20000
-                print("Harga:Rp " + str(total))
+                listnamabelanjaan.append("Jeruk")
+                listhargabelanjaan.append(qnty)
             elif option == 3:
                 qnty = int(input("Masukkan jumlah buah (per kg): "))
                 total = qnty * 50000
-                print("Harga:Rp " + str(total))
+                listnamabelanjaan.append("Apel")
+                listhargabelanjaan.append(qnty)
             elif option == 4:
                 qnty = int(input("Masukkan jumlah buah (per kg): "))
                 total = qnty * 25000
-                print("Harga:Rp " + str(total))
+                listnamabelanjaan.append("Pir")
+                listhargabelanjaan.append(qnty)
             elif option == 5:
                 qnty = int(input("Masukkan jumlah buah (per kg): "))
                 total = qnty * 30000
-                print("Harga:Rp " + str(total))
+                listnamabelanjaan.append("Buah naga")
+                listhargabelanjaan.append(qnty)
             else:
                 print("Opsi tidak ditemukan")
 
@@ -106,28 +118,33 @@ while True :
             listSayur.extend(["5. Kembang kol = 35000"]) # Menambahkan beberapa data ke bagian akhir
             for isi in listSayur:
                 print(isi)
-                option = int(input("Jenis sayur apa yang ingin Anda beli?: "))
+            option = int(input("Jenis sayur apa yang ingin Anda beli?: "))
 
             if option == 1:
                 qnty = int(input("Masukkan jumlah sayur (dalam kg)\t: "))
                 total = qnty * 40000
-                print("Harga:Rp " + str(total))
+                listnamabelanjaan.append("Brokoli")
+                listhargabelanjaan.append(qnty)
             elif option == 2:
                 qnty = int(input("Masukkan jumlah sayur (dalam kg)\t: "))
                 total = qnty * 20000
-                print("Harga:Rp " + str(total))
+                listnamabelanjaan.append("Wortel")
+                listhargabelanjaan.append(qnty)
             elif option == 3:
                 qnty = int(input("Masukkan jumlah sayur (dalam kg)\t: "))
                 total = qnty * 25000
-                print("Harga:Rp " + str(total))
+                listnamabelanjaan.append("Kentang")
+                listhargabelanjaan.append(qnty)
             elif option == 4:
                 qnty = int(input("Masukkan jumlah sayur (dalam kg)\t: "))
                 total = qnty * 25000
-                print("Harga:Rp " + str(total))
+                listnamabelanjaan.append("Cabai")
+                listhargabelanjaan.append(qnty)
             elif option == 5:
                 qnty = int(input("Masukkan jumlah sayur (dalam kg)\t: "))
                 total = qnty * 35000
-                print("Harga \t:Rp " + str(total))
+                listnamabelanjaan.append("Kembang kol")
+                listhargabelanjaan.append(qnty)
             else:
                 print("Opsi tidak ditemukan")
                 break
@@ -135,24 +152,26 @@ while True :
            system('cls')
            print("-Tidak terdeteksi-")
         totalharga += total
-        print("Total belanjaan Anda :", totalharga)
         ulang = input("Apakah Anda ingin menambah keranjang belanjaan? (pilih y/t): ")
 
         if ulang == "y":
             system('cls')
             True
         elif ulang == "t" :
-            print("Total belanjaan Anda :", totalharga)
+             x = 0
+             for x in range(len(listhargabelanjaan)):
+                print("|",x+1,"\t",str(listnamabelanjaan[x]) ,"\t\t\t",str(listhargabelanjaan[x]),"KG|")
+             print("Total belanjaan Anda :", totalharga)
 
-            nama = input ("Nama: ")
-            No_handphone = input ("No Handphone: ")
-            Alamat_lengkap = input ("Alamat Lengkap: ")
-            alamat = ['Banjarsari', 'Serengan', 'Laweyan', 'Pasar Kliwon', 'Jebres'] 
-            print("Daftar Kecamatan: ")
-            for i in range (5):
-                print(i+1, alamat[i])
-            option = str(input("Nama kecamatan : ")) #Masukan nama kecamatan menggunakan kaidah KBBI
-            if option == "Banjarsari":
+             nama = input ("Nama: ")
+             No_handphone = input ("No Handphone: ")
+             Alamat_lengkap = input ("Alamat Lengkap: ")
+             alamat = ['Banjarsari', 'Serengan', 'Laweyan', 'Pasar Kliwon', 'Jebres'] 
+             print("Daftar Kecamatan: ")
+             for i in range (5):
+                 print(i+1, alamat[i])
+             option = str(input("Nama kecamatan : ")) #Masukan nama kecamatan menggunakan kaidah KBBI
+             if option == "Banjarsari":
                 system('cls')
                 ongkir = 4000
                 totalpembayaran = ongkir + totalharga
@@ -164,7 +183,7 @@ while True :
                 print("                      -------------+")
                 print("Total Pembayaran     :", totalpembayaran)
                 break
-            elif option == "Serengan":
+             elif option == "Serengan":
                 system('cls')
                 ongkir =  3000
                 totalpembayaran = ongkir + totalharga
@@ -176,7 +195,7 @@ while True :
                 print("                      -------------+")
                 print("Total Pembayaran     :", totalpembayaran)
                 break
-            elif option == "Laweyan":
+             elif option == "Laweyan":
                 system('cls')
                 ongkir =  5000
                 totalpembayaran = ongkir + totalharga
@@ -188,7 +207,7 @@ while True :
                 print("                      -------------+")
                 print("Total Pembayaran     :", totalpembayaran)
                 break
-            elif option == "Pasar Kliwon":
+             elif option == "Pasar Kliwon":
                 system('cls')
                 ongkir =  3000
                 totalpembayaran = ongkir + totalharga
@@ -200,7 +219,7 @@ while True :
                 print("                      -------------+")
                 print("Total Pembayaran     :", totalpembayaran)
                 break
-            elif option == "Jebres":
+             elif option == "Jebres":
                 system('cls')
                 ongkir =  3000
                 totalpembayaran = ongkir + totalharga
@@ -212,7 +231,7 @@ while True :
                 print("                      -------------+")
                 print("Total Pembayaran     :", totalpembayaran)
                 break
-            else :
+             else :
                 system('cls')
                 ongkir = 10000
                 totalpembayaran = ongkir + totalharga
