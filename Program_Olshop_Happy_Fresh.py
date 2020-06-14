@@ -158,6 +158,16 @@ while True :
             system('cls')
             True
         elif ulang == "t" :
+             print(">===============================================================<")
+             print(">                                                               <")
+             print(">                       RINCIAN PEMBELIAN                       <")
+             print(">                          HAPPY FRESH                          <")
+             print(">---------------------------------------------------------------<")
+             print(">        • 100% FRESH • 100% HIGIENIS 100% TERJANGKAU •         <")
+             print(">            🚩Pucang Sawit, Surakarta, Jawa Tengah🚩          <")
+             print(">                    WA/NO.TELP +6281230526092                  <")
+             print(">                                                               <")
+             print(">===============================================================<")
              x = 0
              for x in range(len(listhargabelanjaan)):
                 print("|",x+1,"\t",str(listnamabelanjaan[x]) ,"\t\t\t",str(listhargabelanjaan[x]),"KG|")
