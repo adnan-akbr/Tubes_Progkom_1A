@@ -41,12 +41,12 @@ while True :
                 print(isi)
             option = int(input("Jenis daging apa yang ingin Anda beli?: "))
             if option == 1:
-                qnty = int(input("Masukkan jumlah daging (per kg): "))
+                qnty = float(input("Masukkan jumlah daging (per kg): "))
                 total = qnty * 170000
                 listnamabelanjaan.append("Tenderloin")
                 listhargabelanjaan.append(qnty)
             elif option == 2:
-                qnty = int(input("Masukkan jumlah daging (per kg): "))
+                qnty = float(input("Masukkan jumlah daging (per kg): "))
                 total = qnty * 150000
                 listnamabelanjaan.append("Sirloin")
                 listhargabelanjaan.append(qnty)
@@ -56,12 +56,12 @@ while True :
                 listnamabelanjaan.append("Rib eye")
                 listhargabelanjaan.append(qnty)
             elif option == 4:
-                qnty = int(input("Masukkan jumlah daging (per kg): "))
+                qnty = float(input("Masukkan jumlah daging (per kg): "))
                 total = qnty * 120000
                 listnamabelanjaan.append("Brisket")
                 listhargabelanjaan.append(qnty)
             elif option == 5:
-                qnty = int(input("Masukkan jumlah daging (per kg): "))
+                qnty = float(input("Masukkan jumlah daging (per kg): "))
                 total = qnty * 130000
                 listnamabelanjaan.append("Oxtail")
                 listhargabelanjaan.append(qnty)
@@ -81,27 +81,27 @@ while True :
             option = int(input("Jenis buah apa yang ingin Anda beli?: "))
 
             if option == 1:
-                qnty = int(input("Masukkan jumlah buah (per kg): "))
+                qnty = float(input("Masukkan jumlah buah (dalam kg): "))
                 total = qnty * 30000
                 listnamabelanjaan.append("Mangga")
                 listhargabelanjaan.append(qnty)
             elif option == 2:
-                qnty = int(input("Masukkan jumlah buah (per kg): "))
+                qnty = float(input("Masukkan jumlah buah (dalam kg): "))
                 total = qnty * 20000
                 listnamabelanjaan.append("Jeruk")
                 listhargabelanjaan.append(qnty)
             elif option == 3:
-                qnty = int(input("Masukkan jumlah buah (per kg): "))
+                qnty = float(input("Masukkan jumlah buah (dalam kg): "))
                 total = qnty * 50000
                 listnamabelanjaan.append("Apel")
                 listhargabelanjaan.append(qnty)
             elif option == 4:
-                qnty = int(input("Masukkan jumlah buah (per kg): "))
+                qnty = float(input("Masukkan jumlah buah (dalam kg): "))
                 total = qnty * 25000
                 listnamabelanjaan.append("Pir")
                 listhargabelanjaan.append(qnty)
             elif option == 5:
-                qnty = int(input("Masukkan jumlah buah (per kg): "))
+                qnty = float(input("Masukkan jumlah buah (dalam kg): "))
                 total = qnty * 30000
                 listnamabelanjaan.append("Buah naga")
                 listhargabelanjaan.append(qnty)
@@ -121,27 +121,27 @@ while True :
             option = int(input("Jenis sayur apa yang ingin Anda beli?: "))
 
             if option == 1:
-                qnty = int(input("Masukkan jumlah sayur (dalam kg)\t: "))
+                qnty = float(input("Masukkan jumlah sayur (dalam kg)\t: "))
                 total = qnty * 40000
                 listnamabelanjaan.append("Brokoli")
                 listhargabelanjaan.append(qnty)
             elif option == 2:
-                qnty = int(input("Masukkan jumlah sayur (dalam kg)\t: "))
+                qnty = float(input("Masukkan jumlah sayur (dalam kg)\t: "))
                 total = qnty * 20000
                 listnamabelanjaan.append("Wortel")
                 listhargabelanjaan.append(qnty)
             elif option == 3:
-                qnty = int(input("Masukkan jumlah sayur (dalam kg)\t: "))
+                qnty = float(input("Masukkan jumlah sayur (dalam kg)\t: "))
                 total = qnty * 25000
                 listnamabelanjaan.append("Kentang")
                 listhargabelanjaan.append(qnty)
             elif option == 4:
-                qnty = int(input("Masukkan jumlah sayur (dalam kg)\t: "))
+                qnty = float(input("Masukkan jumlah sayur (dalam kg)\t: "))
                 total = qnty * 25000
                 listnamabelanjaan.append("Cabai")
                 listhargabelanjaan.append(qnty)
             elif option == 5:
-                qnty = int(input("Masukkan jumlah sayur (dalam kg)\t: "))
+                qnty = float(input("Masukkan jumlah sayur (dalam kg)\t: "))
                 total = qnty * 35000
                 listnamabelanjaan.append("Kembang kol")
                 listhargabelanjaan.append(qnty)
