@@ -29,8 +29,8 @@ def Awal():
         print(">              GRAB YOURS FAST              <")
         print(">                                           <")
         print("> ========================================= <")
-        print("Enter 1. jika anda Admin")
-        print("Enter 2. Jika and pembeli")
+        print("Enter 1. Menu Admin")
+        print("Enter 2. Menu Pembeli")
         print("Enter 3. To exit")
         try:
             a=int(input("pilih angka 1-3: "))
