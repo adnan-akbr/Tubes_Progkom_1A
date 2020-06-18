@@ -20,7 +20,7 @@ while True :
     print(">      ❗Pengirimiman Khusus Area Solo❗      <")
     print(">          MENERIMA COD DAN TRANSFER        <")
     print(">                                           <")
-    print(">          ❗❗❗ HAPPY SHOPPING ❗❗❗           <")
+    print(">          ❗❗❗ HAPPY SHOPPING ❗❗❗          <")
     print(">              GRAB YOURS FAST              <")
     print(">                                           <")
     print("> ========================================= <")
@@ -114,8 +114,8 @@ while True :
             listSayur.append("1. Brokoli (1kg) \t\t = 40000") 
             listSayur.append("2. Wortel (1kg) \t\t = 20000")
             listSayur.append("3. Kentang (1kg) \t\t = 25000")
-            listSayur.append("4. Cabai (1kg) \t\t = 25000")
-            listSayur.extend(["5. Kembang kol = 35000"]) # Menambahkan beberapa data ke bagian akhir
+            listSayur.append("4. Cabai (1kg) \t\t\t = 25000")
+            listSayur.extend(["5. Kembang kol \t\t\t = 35000"]) # Menambahkan beberapa data ke bagian akhir
             for isi in listSayur:
                 print(isi)
             option = int(input("Jenis sayur apa yang ingin Anda beli?: "))
@@ -279,4 +279,26 @@ while True :
         system('cls')
         print("------Terima kasih atas kunjungannya------")
         break
+        
+        
+namafile=input("Inputkan nama file (format : NAMAFILE.csv) : ")
+count = 0
+with open(namafile,"w+") as f:
+        f.write(">===============================================================<"+"\n")
+        f.write(">                                                               <"+"\n")
+        f.write(">                       RINCIAN PEMBELIAN                       <"+"\n")
+        f.write(">                          HAPPY FRESH                          <"+"\n")
+        f.write(">---------------------------------------------------------------<"+"\n")
+        f.write("                   Bought By: "+ nama+"\n")
+        f.write("    No Hp: " +No_handphone+"    Alamat:"+Alamat_lengkap+"\n\n")
+        f.write("No \t\t Produk \t\t     Quantity \n" )
+for x in range(len(listhargabelanjaan)):
+    with open(namafile,"a") as f:
+        count = count + 1
+        f.write(str(count)+". \t\t"+ str(listnamabelanjaan[x])+"\t\t\t\t  "+str(listhargabelanjaan[x])+"\n\n")
+with open(namafile,"a") as f:
+    f.write("Total belanjaan Anda :" + str(totalharga)+"\n")
+    f.write("Ongkir               :" + str(ongkir)+"\n")
+    f.write("                      -------------+"+"\n")
+    f.write("Total Pembayaran     :" + str(totalpembayaran)+"\n")
         
