@@ -1,6 +1,7 @@
 import csv
 import getpass
 import os
+from os import system
 
 def ulang():
     print(">=====================================================================<")
@@ -152,6 +153,7 @@ def ulang():
         ulang() #gen isoh neng menu awal/menu admin
     elif loop == "t" :
         print("------Terima kasih atas kunjungannya------")
+        system.exit()
 
        
         
