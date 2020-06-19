@@ -285,7 +285,7 @@ def customer():
             break
         
         
-    namafile=input("Inputkan nama file (format : NAMAFILE.txt) : ")
+    namafile = nama
     count = 0
     with open(namafile,"w+") as f:
             f.write(">===============================================================<"+"\n")
@@ -299,7 +299,7 @@ def customer():
     for x in range(len(listhargabelanjaan)):
         with open(namafile,"a") as f:
             count = count + 1
-            f.write(str(count)+". \t\t"+ str(listnamabelanjaan[x])+"\t\t\t  "+str(listhargabelanjaan[x])+"\n\n")
+            f.write(str(count)+". \t\t"+ str(listnamabelanjaan[x])+"\t\t\t\t  "+str(listhargabelanjaan[x])+"\n\n")
     with open(namafile,"a") as f:
         f.write("Total belanjaan Anda :" + str(totalharga)+"\n")
         f.write("Ongkir               :" + str(ongkir)+"\n")
