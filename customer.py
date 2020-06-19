@@ -301,6 +301,6 @@ def customer():
         ulang = input("Apakah Anda ingin menggunakan program ini lagi? (pilih y/t): ")
         if ulang == "y":
             system('cls')
-            ulang()
+            True
         elif ulang == "t" :
             system.exit()
