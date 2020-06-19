@@ -274,41 +274,33 @@ def customer():
         else :
             print("system error")
         
-        ulang = input("Apakah Anda ingin menggunakan program ini lagi? (pilih y/t): ")
     
+        
+        
+        namafile = nama
+        count = 0
+        with open(namafile,"w+") as f:
+                f.write(">===============================================================<"+"\n")
+                f.write(">                                                               <"+"\n")
+                f.write(">                       RINCIAN PEMBELIAN                       <"+"\n")
+                f.write(">                          HAPPY FRESH                          <"+"\n")
+                f.write(">---------------------------------------------------------------<"+"\n")
+                f.write("                   Bought By: "+ nama+"\n")
+                f.write("    No Hp: " +No_handphone+"    Alamat:"+Alamat_lengkap+"\n\n")
+                f.write("No \t\t Produk \t\t     Quantity \n" )
+        for x in range(len(listhargabelanjaan)):
+            with open(namafile,"a") as f:
+                count = count + 1
+                f.write(str(count)+". \t\t"+ str(listnamabelanjaan[x])+"\t\t\t\t  "+str(listhargabelanjaan[x])+"\n\n")
+        with open(namafile,"a") as f:
+            f.write("Total belanjaan Anda :" + str(totalharga)+"\n")
+            f.write("Ongkir               :" + str(ongkir)+"\n")
+            f.write("                      -------------+"+"\n")
+            f.write("Total Pembayaran     :" + str(totalpembayaran)+"\n")
+
+        ulang = input("Apakah Anda ingin menggunakan program ini lagi? (pilih y/t): ")
         if ulang == "y":
             system('cls')
-            True
+            ulang()
         elif ulang == "t" :
-            system('cls')
-            print("------Terima kasih atas kunjungannya------")
-            break
-        
-        
-    namafile = nama
-    count = 0
-    with open(namafile,"w+") as f:
-            f.write(">===============================================================<"+"\n")
-            f.write(">                                                               <"+"\n")
-            f.write(">                       RINCIAN PEMBELIAN                       <"+"\n")
-            f.write(">                          HAPPY FRESH                          <"+"\n")
-            f.write(">---------------------------------------------------------------<"+"\n")
-            f.write("                   Bought By: "+ nama+"\n")
-            f.write("    No Hp: " +No_handphone+"    Alamat:"+Alamat_lengkap+"\n\n")
-            f.write("No \t\t Produk \t\t     Quantity \n" )
-    for x in range(len(listhargabelanjaan)):
-        with open(namafile,"a") as f:
-            count = count + 1
-            f.write(str(count)+". \t\t"+ str(listnamabelanjaan[x])+"\t\t\t\t  "+str(listhargabelanjaan[x])+"\n\n")
-    with open(namafile,"a") as f:
-        f.write("Total belanjaan Anda :" + str(totalharga)+"\n")
-        f.write("Ongkir               :" + str(ongkir)+"\n")
-        f.write("                      -------------+"+"\n")
-        f.write("Total Pembayaran     :" + str(totalpembayaran)+"\n")
-        
-    ulang = input("Apakah Anda ingin menggunakan program ini lagi? (pilih y/t): ")
-    if ulang == "y":
-        system('cls')
-        True
-    elif ulang == "t" :
-        system('cls')
+            system.exit()
