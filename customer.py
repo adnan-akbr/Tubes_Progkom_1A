@@ -185,7 +185,7 @@ def customer():
                  for i in range (5):
                      print(i+1, alamat[i])
                  option = input("Nama kecamatan : ") #Masukan nama kecamatan menggunakan kaidah KBBI
-                 if option == 1:
+                 if option == '1':
                     system('cls')
                     ongkir = 4000
                     totalpembayaran = ongkir + totalharga
@@ -197,7 +197,7 @@ def customer():
                     print("                      -------------+")
                     print("Total Pembayaran     :", totalpembayaran)
                     break
-                 elif option == 2:
+                 elif option == '2':
                     system('cls')
                     ongkir =  3000
                     totalpembayaran = ongkir + totalharga
@@ -209,7 +209,7 @@ def customer():
                     print("                      -------------+")
                     print("Total Pembayaran     :", totalpembayaran)
                     break
-                 elif option == 3:
+                 elif option == '3':
                     system('cls')
                     ongkir =  5000
                     totalpembayaran = ongkir + totalharga
@@ -221,7 +221,7 @@ def customer():
                     print("                      -------------+")
                     print("Total Pembayaran     :", totalpembayaran)
                     break
-                 elif option == 4:
+                 elif option == '4':
                     system('cls')
                     ongkir =  3000
                     totalpembayaran = ongkir + totalharga
@@ -233,7 +233,7 @@ def customer():
                     print("                      -------------+")
                     print("Total Pembayaran     :", totalpembayaran)
                     break
-                 elif option == 5:
+                 elif option == '5':
                     system('cls')
                     ongkir =  3000
                     totalpembayaran = ongkir + totalharga
