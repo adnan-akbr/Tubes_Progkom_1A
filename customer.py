@@ -185,7 +185,7 @@ def customer():
                  for i in range (5):
                      print(i+1, alamat[i])
                  option = input("Nama kecamatan : ") #Masukan nama kecamatan menggunakan kaidah KBBI
-                 if option == '1':
+                 if option == "Banjarsari":
                     system('cls')
                     ongkir = 4000
                     totalpembayaran = ongkir + totalharga
@@ -197,7 +197,7 @@ def customer():
                     print("                      -------------+")
                     print("Total Pembayaran     :", totalpembayaran)
                     break
-                 elif option == '2':
+                 elif option == "Serengan":
                     system('cls')
                     ongkir =  3000
                     totalpembayaran = ongkir + totalharga
@@ -209,7 +209,7 @@ def customer():
                     print("                      -------------+")
                     print("Total Pembayaran     :", totalpembayaran)
                     break
-                 elif option == '3':
+                 elif option == "Laweyan":
                     system('cls')
                     ongkir =  5000
                     totalpembayaran = ongkir + totalharga
@@ -221,7 +221,7 @@ def customer():
                     print("                      -------------+")
                     print("Total Pembayaran     :", totalpembayaran)
                     break
-                 elif option == '4':
+                 elif option == "Pasar Kliwon":
                     system('cls')
                     ongkir =  3000
                     totalpembayaran = ongkir + totalharga
@@ -233,7 +233,7 @@ def customer():
                     print("                      -------------+")
                     print("Total Pembayaran     :", totalpembayaran)
                     break
-                 elif option == '5':
+                 elif option == "Jebres":
                     system('cls')
                     ongkir =  3000
                     totalpembayaran = ongkir + totalharga
@@ -291,7 +291,7 @@ def customer():
         for x in range(len(listhargabelanjaan)):
             with open(namafile,"a") as f:
                 count = count + 1
-                f.write(str(count)+". \t\t"+ str(listnamabelanjaan[x])+"\t\t\t\t  "+str(listhargabelanjaan[x])+"\n\n")
+                f.write(str(count)+". \t\t"+ str(listnamabelanjaan[x])+"\t\t\t  " +str(listhargabelanjaan[x])+"\n\n")
         with open(namafile,"a") as f:
             f.write("Total belanjaan Anda :" + str(totalharga)+"\n")
             f.write("Ongkir               :" + str(ongkir)+"\n")
