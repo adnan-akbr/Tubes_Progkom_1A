@@ -307,4 +307,8 @@ def customer():
         f.write("Total Pembayaran     :" + str(totalpembayaran)+"\n")
         
     ulang = input("Apakah Anda ingin menggunakan program ini lagi? (pilih y/t): ")
-        
+    if ulang == "y":
+        system('cls')
+        True
+    elif ulang == "t" :
+        system('cls')
