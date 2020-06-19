@@ -54,7 +54,7 @@ def customer():
                     listnamabelanjaan.append("Sirloin")
                     listhargabelanjaan.append(qnty)
                 elif option == 3:
-                    qnty = int(input("Masukkan jumlah daging (per kg): "))
+                    qnty = float(input("Masukkan jumlah daging (per kg): "))
                     total = qnty * 140000
                     listnamabelanjaan.append("Rib eye")
                     listhargabelanjaan.append(qnty)
